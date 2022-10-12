@@ -13,5 +13,5 @@ vim.api.nvim_create_user_command('RefGo', function(opts)
   local ref = opts.args
   refgo.open(ref)
 end, {
-  nargs = 1,
+  nargs = '?',
 })

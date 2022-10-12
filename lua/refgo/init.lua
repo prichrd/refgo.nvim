@@ -18,7 +18,7 @@ end
 -- Opens the provided reference. If no reference is passed down, the selection
 -- register will be used as the default reference value.
 M.open = function(reference)
-  if reference == nil then
+  if reference == nil or reference == "" then
     reference = vim.fn.getreg("*", 1)
   end
 
