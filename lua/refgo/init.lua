@@ -12,6 +12,7 @@ M.copy = function()
   local row, _ = unpack(vim.api.nvim_win_get_cursor(winid))
   local ref = string.format("%s:%d", relpath, row)
   vim.fn.setreg("*", ref)
+  vim.fn.setreg("+", ref)
   notify_fn(string.format("Copied '%s' to clipboard", ref), vim.log.levels.INFO)
 end
 
