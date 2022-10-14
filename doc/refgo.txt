@@ -23,15 +23,13 @@ be expressed as a file and a line (e.g. 'path/to/file:99').
 COMMANDS                                                      *refgo-commands*
 
                                                                     *:RefCopy*
-
 :RefCopy
 
 Copies the reference of the current line. It stores inside of the selection
 registers (* and +) a reference with the following form: 'path/to/file:99'.
 
                                                                       *:RefGo*
-
-:RefGo [reference]
+:RefGo {reference}
 
 Goes to the provided reference or to the selection register '*' value if no 
 reference provided.
