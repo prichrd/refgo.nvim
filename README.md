@@ -19,4 +19,4 @@ It is possible to install it with all popular package managers:
 ## Usage
 
 The documentation can be found at [doc/refgo.txt](doc/refgo.txt). You can 
-also use the `:help refgo` command inside of Neovim.
+also use the `:help refgo.nvim` command inside of Neovim.

@@ -1,4 +1,3 @@
-
 *refgo.txt* Share code references with ease.
 *refgo.nvim*
 
@@ -6,14 +5,13 @@
 CONTENTS                                                      *refgo-contents*
 
   1. Intro....................................|refgo-intro|
-  2. Commands.................................|refgo-settings|
+  2. Commands.................................|refgo-commands|
 
 ==============================================================================
 INTRO                                                            *refgo-intro*
 
 This plugin helps you copy and jump to line references. A line reference can 
 be expressed as a file and a line (e.g. 'path/to/file:99').
-
 
 * Copy a line reference to clipboard with |:RefCopy|
 * Go to a reference with |:RefGo|
