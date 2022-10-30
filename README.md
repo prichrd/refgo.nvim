@@ -4,7 +4,7 @@ This plugin helps you copy and jump to line references. A line reference can be
 expressed as a file and a line (e.g. `path/to/file:99`).
 
 * Copy a line reference to clipboard with `:RefCopy`
-* Go to a reference with `:RefGo`
+* Go to a reference with `:RefGo <ref>` or `:RefGo` to use clipboard
 
 ## Installing
 
