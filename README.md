@@ -8,7 +8,7 @@ expressed as a file and a line (e.g. `path/to/file:99`).
 
 ## Installing
 
-Goto requires Neovim and follows the standard runtime package structure. 
+refgo.nvim requires Neovim and follows the standard runtime package structure. 
 It is possible to install it with all popular package managers:
 
 * [vim-plug](https://github.com/junegunn/vim-plug)
