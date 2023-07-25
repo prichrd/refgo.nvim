@@ -10,26 +10,43 @@ CONTENTS                                                      *refgo-contents*
 ==============================================================================
 INTRO                                                            *refgo-intro*
 
-This plugin helps you copy and jump to line references. A line reference can 
+This plugin helps you copy and jump to line references. A line reference can
 be expressed as a file and a line (e.g. 'path/to/file:99').
 
 * Copy a line reference to clipboard with |:RefCopy|
+* Copy a line reference plus the surrounding lines to clipboard with |:RefCopyContext|
 * Go to a reference with |:RefGo|
 
 
 ==============================================================================
-COMMANDS                                                      *refgo-commands*
+COMMANDS                                                        *refgo-commands*
 
-                                                                    *:RefCopy*
+                                                                      *:RefCopy*
 :RefCopy
 
 Copies the reference of the current line. It stores inside of the selection
 registers (* and +) a reference with the following form: 'path/to/file:99'.
 
-                                                                      *:RefGo*
+                                                               *:RefCopyContext*
+:RefCopyContext {n}
+
+Copies the reference of the current line, and the lines surounding the cursor.
+It stores inside of the selection registers (* and +) a reference with the
+following form:
+
+  > path/to/file:99
+  > ---
+  > this is the prev line
+  > this is the cursor line
+  > this is the next line
+
+If the n parameter isn't set, the default behavior is to take the previous and
+next line. If set, it will copy from the -n to the +n lines.
+
+                                                                        *:RefGo*
 :RefGo {reference}
 
-Goes to the provided reference or to the selection register '*' value if no 
+Goes to the provided reference or to the selection register '*' value if no
 reference provided.
 
 
